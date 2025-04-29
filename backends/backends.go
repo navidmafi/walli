@@ -8,6 +8,7 @@ const (
 	Swww     BackendName = "swww"
 	Gnome    BackendName = "gnome"
 	Plasma   BackendName = "plasma"
+	Feh      BackendName = "feh"
 	MvpPaper BackendName = "mvppaper"
 )
 
@@ -21,6 +22,7 @@ var Backends = map[BackendName]Backend{
 	Swww:   &swwwBackend{},
 	Gnome:  &gnomeBackend{},
 	Plasma: &plasmaBackend{},
+	Feh:    &fehBackend{},
 }
 
 func GetAvailable() []string {
